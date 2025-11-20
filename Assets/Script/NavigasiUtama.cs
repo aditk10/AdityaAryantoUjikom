@@ -10,6 +10,8 @@ public class NavigasiUtama : MonoBehaviour
 
     public AudioSource SFX_GameOver;
 
+    public Score score;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
