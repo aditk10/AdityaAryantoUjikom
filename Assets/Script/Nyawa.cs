@@ -1,12 +1,15 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public class Nyawa : MonoBehaviour
 {
-    public TMP_Text TextScore;
+    public TMP_Text TextNyawa;
     public TMP_Text TextHiScore;
-    public int scorePlay;
-    public int HighScore;
+    public int Nyawa2 = 10;
+    // public int HighScore;
+
+    public Image ProgressFill;
 
     void Start()
     {
@@ -17,20 +20,21 @@ public class Score : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            TambahScore();
+            KurangNyawa();
             updateTextScore();
             // jump.lompat();
             // MunculDariAtas();
         }
     }
 
-    public void TambahScore()
+    public void KurangNyawa()
     {
-        scorePlay++;
+        Nyawa2--;
     }
 
     public void updateTextScore()
     {
-        TextScore.text  = "Score = " + scorePlay.ToString();
+        TextNyawa.text  = "Nyawa = " + Nyawa2.ToString();
+        ProgressFill.fillAmount = Nyawa2 - 1;
     }
 }

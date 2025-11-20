@@ -302,9 +302,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff86ba1c74c41149b103266b49f1bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGM_Gameplay: {fileID: 18715892}
+  BGM_Gameplay: {fileID: 0}
   BGM_MainMenu: {fileID: 18715891}
-  SFX_GameOver: {fileID: 18715890}
+  SFX_GameOver: {fileID: 0}
+  score: {fileID: 0}
 --- !u!82 &18715890
 AudioSource:
   m_ObjectHideFlags: 0
